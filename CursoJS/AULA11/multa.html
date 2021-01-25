@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de multas</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro:  <input type="number" name="textvel" id="textvel"/> Km/h 
+    <input type="button" value="verificar" onclick="calcular()"/>
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function calcular() {
+        // var txtv= window.document.getElementByName('textvel') ou 
+        var txtv = window.document.querySelector('input#textvel')
+        var res = window.document.querySelector('div#res')
+        var vel = Number(txtv.value)
+        res.innerHTML =  `<p>Sua velocidade atual é de <strong>${vel}</strong> a velocidade max. é 60km/h </p>`
+
+        if(vel>60) {
+            res.innerHTML += `Você foi <strong> Multado! </strong>`
+        } else {
+            res.innerHTML  += `<strong> Sem multa </strong>`
+        }
+        res.innerHTML +=  `<p>Dirija sempre com o cinto de segurança</p> ` 
+        // += para adicinar mais uma linha (concatenar com outro paragrafo)
+    }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Primeiros passsos com o DOM </title>
+    <style>
+        body {
+            background:cornflowerblue;
+            color:cornsilk;
+            font:normal 18pt Arail;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Iniciando o DOM </h1>
+    <p>Aqui vai o resultaado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg"> Click em mim </div>
+
+    <script>
+
+/* 
+        var p1 = window.document.getElementsByTagName('p') [0]
+        var corpo = window.document.body  
+        //var d = window.document.getElementById('msg')
+
+
+        p1.style.color = 'blue' // trocar a cor do parágrafo selecionado para azul
+        window.document.write('Esta escrito assim: ' + p1.innerText) 
+        corpo.style.background = 'black' // trocar a cor de fundo para preto
+
+
+
+        d.style.background = 'green'
+        d.innerText = 'estou aguardando'
+
+        ou
+*/
+
+      var d = window.document.querySelector('div#msg')
+      d.style.background = 'blue'
+
+        
+
+       //innerText = apenas vem o texto  e innerHTML = vem o texto e algumas formatação como <strong> (negrito)
+   
+   </script>
+</body>
+</html>

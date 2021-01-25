@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sou Brasileiro ?</title>
+</head>
+<body>
+    <h1>Sou brasileiro??</h1>
+    Em qual pais você nasceu? <input type="text" name="tex" id="tex" />
+    <input type="button" value="verificar" onclick="calcular()"/>
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular() {
+            var pais=window.document.querySelector('inpult#tex')
+            var res=window.document.querySelector('div#res')
+
+            if(pais == 'brasil') {
+                res.innerHTML = 'Sim,você é <strong>brasileiro<strong>'
+            }else{
+                res.innerHTML = 'Não,você é <strong>estrangeiro<strong>'
+            }
+        }
+    </script>
+
+</body>
+
+</html>
